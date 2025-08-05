@@ -1,6 +1,3 @@
-Creación de un entorno de red. Conexión de redes.
-
-
 # ¿Es necesaria una arquitectura de red en la nube de AWS?
 
 La necesidad de una arquitectura de red en AWS no es una cuestión
