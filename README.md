@@ -1,3 +1,4 @@
-# cloud
-Apuntes para la optativa introducción a la nube
-pasando odt a md. pensar tema tareas con imagenes si pasar o no, de momento prueba con redes_justif..
+
+Apuntes para la optativa introducción a la nube  
+## AWS
+1. [Como entrar al laboratorio e instalar cli](/docs/laboratorio.md)
