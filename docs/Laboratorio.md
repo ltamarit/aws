@@ -4,7 +4,7 @@
 
 [COMENZANDO](#comenzando)  
 [INSTALANDO AWS CLI](#instalando-aws-cli)  
-[EL LABORATORIO](#el-laboratorio))
+[EL LABORATORIO](#el-laboratorio)
 
  
 
@@ -68,7 +68,7 @@ Una vez finalizada la instalación podremos comprobar la versión instalada.
 
 Bien, ya tenemos un laboratorio en marcha y el cliente instalado, el siguiente paso es conectarlos, para ello hay que seguir los siguientes pasos: 
 
-￿  Ver credenciales del laboratorio: 
+Ver credenciales del laboratorio: 
 
 ![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.017.png)
 
@@ -78,7 +78,7 @@ Haremos click en show:
 
 Ahora utilizaremos el siguiente comando para enlazar la terminal con el lab. 
 
-$aws configure ![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.019.png)
+``aws configure``  
 
 E iremos copiando y pegando la información que nos vaya pidiendo: 
 
@@ -86,7 +86,7 @@ E iremos copiando y pegando la información que nos vaya pidiendo:
 
 Una vez configurado comprobaremos si podemos recuperar la información del usuario: 
 
-aws sts get-caller-identity ![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.021.png)
+``aws sts get-caller-identity``
 
 ![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.022.png)
 
