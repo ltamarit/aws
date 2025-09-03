@@ -1,4 +1,4 @@
 
 Apuntes para la optativa introducción a la nube  
 ## AWS
-1. [Como entrar al laboratorio e instalar cli](/docs/Entorno.md)
+1. [Entrar al laboratorio e instalar cli](/docs/Entorno.md)
