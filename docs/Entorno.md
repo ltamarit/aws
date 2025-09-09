@@ -12,41 +12,41 @@
 
 Cuando os registréis, os llevará a vuestro panel de control general 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.006.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.006.png)
 
 Y allí ya os mostrará el curso en el que estáis matriculados, haciendo click en él, veréis un lab estándar. 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.007.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.007.png)
 
 En el cual para empezar a funcionar haremos click en Contenidos. 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.008.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.008.png)
 
 El siguiente paso será lanzar el laboratorio para poder acceder al panel de control de AWS y poder empezar a usar sus servicios. 
 
 Previamente tendremos que conceder permisos y decir que nos hemos leído los términos de uso: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.009.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.009.png)
 
 Una vez aceptemos se empezará a lanzar el lab.  
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.010.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.010.png)
 
 Ahora ya tendremos casi preparado el entorno: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.011.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.011.png)
 
 En este momento ya podremos iniciarlo, una vez iniciado tienen una duración de 4horas de trabajo, habrá que esperar un poco ya que durante el tiempo que se inicia también está preparando las credenciales para poder conectarnos por ejemplo por ssh 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.012.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.012.png)
 
 Y cuando se marque en verde haciendo click en AWS podremos acceder al panel de 
 
 control. 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.013.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.013.png)
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.014.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.014.png)
 
 ## INSTALANDO AWS CLI 
 
@@ -58,11 +58,11 @@ En este apartado indicaré la página de la documentación desde donde podremos 
 
 Desde aquí podremos seleccionar el sistema operativo en el que trabajamos y poder seguir las instrucciones de instalación. 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.015.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.015.png)
 
 Una vez finalizada la instalación podremos comprobar la versión instalada. 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.016.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.016.png)
 
 ## EL LABORATORIO 
 
@@ -70,11 +70,11 @@ Bien, ya tenemos un laboratorio en marcha y el cliente instalado, el siguiente p
 
 Ver credenciales del laboratorio: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.017.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.017.png)
 
 Haremos click en show: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.018.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.018.png)
 
 Ahora utilizaremos el siguiente comando para enlazar la terminal con el lab. 
 
@@ -82,23 +82,23 @@ Ahora utilizaremos el siguiente comando para enlazar la terminal con el lab.
 
 E iremos copiando y pegando la información que nos vaya pidiendo: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.020.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.020.png)
 
 Una vez configurado comprobaremos si podemos recuperar la información del usuario: 
 
 ``aws sts get-caller-identity``
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.022.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.022.png)
 
 En el caso de los labs vemos que no logra conectarse y devuelve un error. Para paliar este error accederemos a la carpeta personal del usuario y dentro de ésta hay una carpeta oculta .aws (creada cuando hemos hecho aws configure), y dentro de esta carpeta tenemos el archivo credentials, el cual tiene la información que hemos introducido antes. Ahora bien, para arreglarlo vaciaremos el contenido del archivo y copiaremos toda la información de AWS Details dentro del archivo: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.023.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.023.png)
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.024.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.024.png)
 
 Y una vez hecho comprobaremos si nos devuelve las credenciales: 
 
-![](../img/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.025.png)
+![](../images/ud01/Aspose.Words.e395b7c6-1e26-49fd-b372-52b960032aa8.025.png)
 
 Al ser un entorno preparado de laboratorio las credenciales devueltas son de un perfil general  (Estudiante  de  prueba)  pero  si  fueran  credenciales  reales  devolvería  el  nombre correspondiente. Destacar que Arn significa Amazon Resource Name que es el identificador que genera AWS para identificar recursos/servicios. 
 9
