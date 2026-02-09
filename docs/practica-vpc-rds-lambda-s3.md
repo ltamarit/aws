@@ -1,4 +1,4 @@
-# Examen convocatoria ordinaria. VPC con Subredes, Base de Datos RDS, Lambda y S3
+# VPC con Subredes, Base de Datos RDS, Lambda y S3
 
 ## Objetivo General
 
