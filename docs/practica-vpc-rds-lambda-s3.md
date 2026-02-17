@@ -167,8 +167,8 @@ mysql -h <endpoint-rds> -u admin -p
   - `lambda-practica-apellido`
 - Lenguaje:
   - Python 3.12
-- Rol:
-  - Nuevo rol con permisos básicos de CloudWatch Logs
+- Rol existente:
+  - LabRole
 
 ## Código
 
